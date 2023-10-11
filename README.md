@@ -1,6 +1,6 @@
 # CI/CD
 
-### what is CI/CD?
+### What is CI/CD?
 
 **CI/CD is considered as the backbone of DevOps practices and automation**. It plays a vital, challenging and exciting role in DevOps culture, growing numbers of companies releasing software in minutes with the adoption of CI/CD practices.
 
