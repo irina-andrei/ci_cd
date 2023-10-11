@@ -50,3 +50,8 @@ Jenkins is an **open-source automation server** in which the central build and C
 * extensible with huge community-contributed plugin resource.
 * easy environment configuration in user interface.
 * supports distributed builds with master-slave architecture.
+
+<br>
+
+Source:
+[DevOps](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
