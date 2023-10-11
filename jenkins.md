@@ -34,43 +34,52 @@ Jenkins is an **open-source automation server** in which the central build and C
 * supports distributed builds with master-slave architecture.
 
 
-
-
 <br>
 
 ### Jenkins Job page:
 
-![AltText](job.png)
+![AltText](Images/job.png)
 
 You can see everything to do with your Job.
 
 <br>
 
-## Steps:
 
-1. Start a new Job: 
+## Steps for creating a Job and setting up WebHook:
 
-![AltText](panel.png)
+1. Initialise a new Job: 
+
+![AltText](Images/panel.png)
 
 2. Choose a name and then click Freestyle project:
 
-![AltText](name.png)
+![AltText](Images/name.png)
 
 3. Write a Description and Select Discard old builds:
 
-![AltText](description.png)
+![AltText](Images/description.png)
 
 4. Enter the IP Address for the repo:
-![AltText](github.png)
 
-5. Enter the SSH url for the repo and the key to access:
-![AltText](github_repo.png)
+![AltText](Images/github.png)
 
-6. Tick "Provide Noge & npm bin/folder to PATH" box:
+5. In Webhook, add your Repository link:
 
-![AltText](npm.png)
+![AltText](Images/add_webhook.png)
 
-7. And 'Execute shell' and enter:
+6. Enter the SSH url for the repo and the key to access:
+
+![AltText](Images/github_repo.png)
+
+7. In Build Trigger, tick the 'GitHub hook trigger for GITScm polling' box:
+
+![AltText](Images/build_triggers.png)
+
+8. Tick "Provide Node & npm bin/folder to PATH" box:
+
+![AltText](Images/npm.png)
+
+9. Add 'Execute shell' Commands, then press Save:
 
 ```shell
 cd app
@@ -78,6 +87,24 @@ npm install
 npm test
 ```
 
-8. After you saved it, press Build Now:
+![AltText](Images/execute.png)
 
-![AltText](build.png)
+10. After you saved it, press Build Now to run:
+
+![AltText](Images/build.png)
+
+11. On GitHub, add Webhook in the settings of your repository:
+
+![AltText](Images/webhook_settings_on_github.png)
+
+12. In Build History, you'll be able to see the Console Output:
+
+![AltText](Images/console_output.png)
+
+<br>
+
+Sources:
+
+[GitHub - Jenkins - blazemeter.com](https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project)
+
+[DevOps Culture and CI/CD](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)

@@ -58,4 +58,4 @@ Jenkins is an **open-source automation server** in which the central build and C
 <br>
 
 Source:
-[DevOps](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
+[DevOps Culture and CI/CD](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
