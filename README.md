@@ -1,8 +1,5 @@
 # CI/CD
 
-```PLACEHOLDER FOR CICD DIAGRAM```
-
-![AltText](diagram.png)
 
 ### What is CI/CD?
 
@@ -18,44 +15,4 @@
 
 ### Why use it?
 
-Approximately 2400 companies reportedly use CICD pipelines in their tech stack (including Facebook, Netflix, and Instacart) predominantly to gain the benefits of **faster software builds**, **customer satisfaction** by deploying the app in time and **small code changes make fault isolation simpler and quicker**.
-
-<br>
-
-### What is Jenkins?
-
-Jenkins is an **open-source automation server** in which the central build and CI process take place. It is a Java-based program with packages for Windows, macOS & Linux.
-
-<br>
-
-### Stages of Jenkins:
-**1** — Creating a Jenkins job 
-
-**2** — Building a pipeline in Jenkins
-
-**3** — Linking the jobs
-
-<br>
-
-### What alternatives are there for Jenkins?
-* CircleCi
-* TeamCity
-* Bamboo
-* GitLab
-
-<br>
-
-### Why Jenkins?
-
-* Jenkins has great range of plugins available.
-* it supports building, deploying and automating for software development projects.
-* easy installation.
-* simple and user-friendly interface.
-* extensible with huge community-contributed plugin resource.
-* easy environment configuration in user interface.
-* supports distributed builds with master-slave architecture.
-
-<br>
-
-Source:
-[DevOps Culture and CI/CD](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
+Approximately 2400 companies reportedly use CI/CD pipelines in their tech stack (including Facebook, Netflix, and Instacart) predominantly to gain the benefits of **faster software builds**, **customer satisfaction** by deploying the app in time and **small code changes make fault isolation simpler and quicker**.

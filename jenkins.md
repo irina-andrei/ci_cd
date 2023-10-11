@@ -1,5 +1,7 @@
 # Jenkins
 
+![AltText](Images/diagram.png)
+
 ### What is Jenkins?
 
 Jenkins is an **open-source automation server** in which the central build and CI process take place. It is a Java-based program with packages for Windows, macOS & Linux.
