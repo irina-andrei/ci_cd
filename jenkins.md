@@ -34,17 +34,50 @@ Jenkins is an **open-source automation server** in which the central build and C
 * supports distributed builds with master-slave architecture.
 
 
+
+
 <br>
-
-### Jenkins Navigation Panel:
-
-![AltText](panel.png)
-
-Here you can crate a new job and see your Build History. 
-
 
 ### Jenkins Job page:
 
 ![AltText](job.png)
 
-You can see everything to do with your Job, including all the build history.
+You can see everything to do with your Job.
+
+<br>
+
+## Steps:
+
+1. Start a new Job: 
+
+![AltText](panel.png)
+
+2. Choose a name and then click Freestyle project:
+
+![AltText](name.png)
+
+3. Write a Description and Select Discard old builds:
+
+![AltText](description.png)
+
+4. Enter the IP Address for the repo:
+![AltText](github.png)
+
+5. Enter the SSH url for the repo and the key to access:
+![AltText](github_repo.png)
+
+6. Tick "Provide Noge & npm bin/folder to PATH" box:
+
+![AltText](npm.png)
+
+7. And 'Execute shell' and enter:
+
+```shell
+cd app
+npm install
+npm test
+```
+
+8. After you saved it, press Build Now:
+
+![AltText](build.png)
