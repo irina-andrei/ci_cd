@@ -14,7 +14,7 @@
 
 ### Why use it?
 
-Approximately 2400 companies reportedly use CICD pipelines in their tech stack (including Facebook, Netflix, and Instacart) predominantly to gain the benefits of **faster software builds**, **customer satisfaction** by deploying the app in time and **Small code changes make fault isolation simpler and quicker**.
+Approximately 2400 companies reportedly use CICD pipelines in their tech stack (including Facebook, Netflix, and Instacart) predominantly to gain the benefits of **faster software builds**, **customer satisfaction** by deploying the app in time and **small code changes make fault isolation simpler and quicker**.
 
 <br>
 
@@ -31,6 +31,7 @@ Jenkins is an **open-source automation server** in which the central build and C
 
 **3** — Linking the jobs
 
+<br>
 
 ### What alternatives are there for Jenkins?
 * CircleCi
