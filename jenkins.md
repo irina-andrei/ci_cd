@@ -77,15 +77,15 @@ You can see everything to do with your Job.
 
 ![AltText](Images/node.png)
 
-7. In Build Trigger, tick the 'GitHub hook trigger for GITScm polling' box:
+8. In Build Trigger, tick the 'GitHub hook trigger for GITScm polling' box:
 
 ![AltText](Images/build_triggers.png)
 
-8. Tick "Provide Node & npm bin/folder to PATH" box:
+9. Tick "Provide Node & npm bin/folder to PATH" box:
 
 ![AltText](Images/npm.png)
 
-9. Add 'Execute shell' Commands, then press Save:
+10. Add 'Execute shell' Commands, then press Save:
 
 ```shell
 cd app
@@ -95,15 +95,15 @@ npm test
 
 ![AltText](Images/execute.png)
 
-10. After you saved it, press Build Now to run:
+11. After you saved it, press Build Now to run:
 
 ![AltText](Images/build.png)
 
-11. On GitHub, add Webhook in the settings of your repository:
+12. On GitHub, add Webhook in the settings of your repository:
 
 ![AltText](Images/webhook_settings_on_github.png)
 
-12. In Build History, you'll be able to see the Console Output:
+13. In Build History, you'll be able to see the Console Output:
 
 ![AltText](Images/console_output.png)
 

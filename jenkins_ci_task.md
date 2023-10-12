@@ -45,3 +45,6 @@ Changing the settings in the first job (irina-CI) to run the second job of **mer
 Sources: 
 
 [Jenkins Git Merges](https://andrewtarry.com/posts/jenkins_git_merges/)
+
+
+
