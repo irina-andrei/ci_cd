@@ -73,7 +73,7 @@ You can see everything to do with your Job.
 
 ![AltText](Images/github_repo.png)
 
-7. Restrict:
+7. In the Office 365 Connector section, select:
 
 ![AltText](Images/node.png)
 
