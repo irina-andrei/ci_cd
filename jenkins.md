@@ -73,6 +73,10 @@ You can see everything to do with your Job.
 
 ![AltText](Images/github_repo.png)
 
+7. Restrict:
+
+![AltText](Images/node.png)
+
 7. In Build Trigger, tick the 'GitHub hook trigger for GITScm polling' box:
 
 ![AltText](Images/build_triggers.png)
