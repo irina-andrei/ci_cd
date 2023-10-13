@@ -26,7 +26,7 @@ CI/CD pipeline = a set of automated steps that help developers integrate, test a
 
 <br>
 
-## How to Approach a task 
+## How to Approach a Task:
 
 * Define the scope and purpose
 * Set the requirements and dependencies
@@ -41,17 +41,17 @@ The Software Development Life Cycle = a process that helps developers create hig
 
 The 6 Main Phases:
 
-1. Requirement analysis: analyze the needs and specifications.
+1. **Requirement analysis**: analyze the needs and specifications.
 
-2. Planning: how to implement the requirements.
+2. **Planning**: how to implement the requirements.
 
-3. Software design: design the structure of the software.
+3. **Software design**: design the structure of the software.
 
-4. Software development: write the code for the software with version control.
+4. **Software development**: write the code for the software with version control.
 
-5. Testing: test the software for functionality, performance, reliability and security. 
+5. **Testing**: test the software for functionality, performance, reliability and security. 
 
-6. Deployment: deploy the software to the production environment.
+6. **Deployment**: deploy the software to the production environment.
 
 The SDLC is not a one-time process, but rather a continuous cycle that repeats itself as long as the software is in use.
 
@@ -62,7 +62,7 @@ The SDLC is not a one-time process, but rather a continuous cycle that repeats i
 ### * DataBase Instance
 
 * Server / VM / EC2: **Linux - ubuntu 18.04 LTS**
-* **MongoDB** installed with required version
+* **MongoDB** installed with v3.2
 * Allow app to connect: bind IP should allow app - **0.0.0.0**
 
 
