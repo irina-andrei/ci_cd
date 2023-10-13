@@ -103,11 +103,6 @@ install nodejs # if not using AMI
 
 <br>
 
-
-Our current Jenkins Server:
-http://13.40.19.89:8080/
-
-
 On instance: Security Group to allow Jenkins IP through port 8080
 
 
