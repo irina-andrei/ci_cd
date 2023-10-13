@@ -103,7 +103,7 @@ install nodejs # if not using AMI
 
 <br>
 
-On instance: Security Group to allow Jenkins IP through port 8080
+On instance: Security Group to allow Jenkins IP through port8080
 
 
 <br>
