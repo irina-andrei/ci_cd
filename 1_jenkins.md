@@ -113,7 +113,7 @@ npm test
 
 <br>
 
-Sources
+Sources:
 
 [GitHub - Jenkins - blazemeter.com](https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project)
 
