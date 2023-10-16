@@ -230,7 +230,7 @@ ssh -A -o "StrictHostKeyChecking=no" ubuntu@54.155.187.144 <<EOF
 
 <br>
 
-Sources:
+Sources
 
 - [CI/CD Best practices - JetBrains.com](https://www.jetbrains.com/teamcity/ci-cd-guide/ci-cd-best-practices/)
 - [CI/CD Process - CodeFresh.io](https://codefresh.io/learn/ci-cd-pipelines/ci-cd-process-flow-stages-and-critical-best-practices/)
