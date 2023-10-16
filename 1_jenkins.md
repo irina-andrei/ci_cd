@@ -47,7 +47,7 @@ You can see everything to do with your Job.
 <br>
 
 
-## Steps for creating a Job and setting up WebHook:
+## Steps for creating a Job and setting up WebHook (1st Job - 'CI'):
 
 1. Initialise a new Job: 
 
@@ -57,11 +57,11 @@ You can see everything to do with your Job.
 
 ![AltText](Images/name.png)
 
-3. Write a Description and Select Discard old builds:
+3. Write a Description:
 
 ![AltText](Images/description.png)
 
-4. Enter the IP Address for the repo:
+4. Select Discard old builds and enter the IP Address for the repo:
 
 ![AltText](Images/github.png)
 
@@ -69,13 +69,13 @@ You can see everything to do with your Job.
 
 ![AltText](Images/add_webhook.png)
 
-6. Enter the SSH url for the repo and the key to access:
+6. Restrict where the project can be run:
+
+![AltText](Images/restrict.png)
+
+7. Enter the SSH url for the repo and the key to access, as well as the branch (we will work on 'dev' until the build passes the tests):
 
 ![AltText](Images/github_repo.png)
-
-7. In the Office 365 Connector section, select:
-
-![AltText](Images/node.png)
 
 8. In Build Trigger, tick the 'GitHub hook trigger for GITScm polling' box:
 
@@ -85,7 +85,7 @@ You can see everything to do with your Job.
 
 ![AltText](Images/npm.png)
 
-10. Add 'Execute shell' Commands, then press Save:
+10. Add 'Execute shell' Commands:
 
 ```shell
 cd app
@@ -94,6 +94,10 @@ npm test
 ```
 
 ![AltText](Images/execute.png)
+
+11. Add Post Build setting, to trigger the next job (will show error if that job hasn't been created yet):
+
+![AltText](Images/post_build_action.png)
 
 11. After you saved it, press Build Now to run:
 

@@ -76,7 +76,7 @@ The SDLC is not a one-time process, but rather a continuous cycle that repeats i
 <br>
 
 
-Steps to take:
+### Steps we will take:
 
 
 1. On Jenkins, creating the CI and Merge jobs ('irina-CI' and 'irina-merge') and making sure they are running smoothly.
@@ -109,7 +109,126 @@ On instance: Security Group to allow Jenkins IP through port8080
 <br>
 
 
+## The CD Task Steps (3rd Job - 'CD'):
 
+1.
+
+![AltText](Images/cd1.png)
+
+2.
+
+
+![AltText](Images/cd7.png)
+
+3.
+
+![AltText](Images/cd2.png)
+
+4.
+
+![AltText](Images/cd3.png)
+
+5.
+
+![AltText](Images/cd4.png)
+
+6.
+
+![AltText](Images/cd5.png)
+
+7.
+
+![AltText](Images/cd6.png)
+
+```shell
+# we will SSH into EC2 and bypass the manual authentification
+# get the app code
+
+#install nginx and test using the public IP address
+
+# install required dependencies
+# cd app
+# npm install
+# sudo kill npm all
+# npm start - this will run in the background (or use pm2: kill pm2 and then relaunch pm2)
+
+
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@PUBLIC_IP_ADDRESS:/home/ubuntu
+
+ssh -o "StrictHostKeyChecking=no" ubuntu@PUBLIC_IP_ADDRESS <<EOF
+	sudo apt update -y
+    sudo apt upgrade -y
+    sudo apt install nginx -y
+    sudo systemctl restart nginx
+    sudo systemctl enable nginx
+    
+EOF
+```
+
+<br>
+
+
+
+## The CD App Task Steps (4rd Job - 'CD-app'):
+
+1.
+
+![AltText](Images/app1.png)
+
+2.
+
+![AltText](Images/app2.png)
+
+3.
+
+![AltText](Images/app3.png)
+
+4.
+
+![AltText](Images/app4.png)
+
+5.
+
+![AltText](Images/app5.png)
+
+6.
+
+![AltText](Images/app6.png)
+
+
+```shell
+# we will SSH into EC2 and bypass the manual authentification
+# get the app code
+# install required dependencies
+# cd app
+# npm install
+# sudo kill npm all
+# npm start - this will run in the background (or use pm2: kill pm2 and then relaunch pm2)
+
+
+
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@54.155.187.144 <<EOF
+	# installing Node.js
+	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+	sudo apt install nodejs -y
+ 
+	# installing pm2 globally
+	sudo npm install pm2 -g
+ 	
+    # going into app folder
+	cd app
+ 
+	# installing npm
+	npm install
+ 
+	# starting the Node.js application
+    pm2 start app.js
+ 
+	pm2 restart app.js
+
+```
+
+<br>
 
 Sources:
 
