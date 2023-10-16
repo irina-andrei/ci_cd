@@ -10,11 +10,11 @@ We need to reconfigure the job so that the code is tested on a different branch 
 
 ### Steps (2nd Job - 'CI-merge'):
 
-1. 
+1. Creating the job and adding a description:
 
 ![AltText](Images/merge_name_and_discard.png)
 
-2. 
+2. Choosing 'Discard old builds' and adding the GitHub repository:
 
 ![AltText](Images/github.png)
 
