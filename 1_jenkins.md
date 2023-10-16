@@ -42,7 +42,7 @@ Jenkins is an **open-source automation server** in which the central build and C
 
 ![AltText](Images/job.png)
 
-You can see everything to do with your Job.
+You can access everything to do with your Job.
 
 <br>
 

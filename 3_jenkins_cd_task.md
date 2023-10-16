@@ -111,38 +111,37 @@ On instance: Security Group to allow Jenkins IP through port8080
 
 ## The CD Task Steps (3rd Job - 'CD'):
 
-1.
+1. Creating the job, adding a description and discarding old builds:
 
 ![AltText](Images/cd1.png)
 
-2.
+2. Adding the GitHub repository:
 
 
 ![AltText](Images/cd7.png)
 
-3.
+3. Restricting where the job can be run:
 
 ![AltText](Images/cd2.png)
 
-4.
+4. Adding the GitHub connection and the SSH key and choosing the 'main' branch to work on:
 
 ![AltText](Images/cd3.png)
 
-5.
+5. Adding a Build Trigger to run only after a stable build of our previous job:
 
 ![AltText](Images/cd4.png)
 
-6.
+6. Adding Node and npm, as well as the SSH Agent:
 
 ![AltText](Images/cd5.png)
 
-7.
+7. Adding the correct commands in the Execute shell section:
 
 ![AltText](Images/cd6.png)
 
 ```shell
 # we will SSH into EC2 and bypass the manual authentification
-# get the app code
 
 #install nginx and test using the public IP address
 
@@ -171,27 +170,27 @@ EOF
 
 ## The CD App Task Steps (4rd Job - 'CD-app'):
 
-1.
+1. Create the job, add description and discard old builds:
 
 ![AltText](Images/app1.png)
 
-2.
+2. Restrict where the job can run:
 
 ![AltText](Images/app2.png)
 
-3.
+3. Add the GitHub Repository, the SSH key and choosing the 'main' branch:
 
 ![AltText](Images/app3.png)
 
-4.
+4. Adding a Build Trigger to only run after a successful build of the previous job:
 
 ![AltText](Images/app4.png)
 
-5.
+5. Adding Node and npm, as well as the SSH Agent:
 
 ![AltText](Images/app5.png)
 
-6.
+6. Adding the correct commands in the Execute shell section:
 
 ![AltText](Images/app6.png)
 

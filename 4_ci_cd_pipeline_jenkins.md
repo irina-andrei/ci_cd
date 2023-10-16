@@ -1,17 +1,13 @@
 # Creating a CI/CD Pipeline with Jenkins
 
-![AltText](Images/diagram.png)
+![AltText](Images/diagram_pipeline.png)
 
 We will build our own Jenkins Server with the required environments, and rebuild the Jenkins pipeline up to the deployment of the app (our 4 jobs).
 
 
+## Steps for setting up your own Jenkins Server:
 
-## Steps:
-
-```DIAGRAM PLACEHOLDER```
-
-![AltText](Images/diagram_overall.png)
-
+![AltText](Images/diagram.png)
 
 1. Launch your instance and choose an appropriate name (recommended AMI: `ami-0136ddddd07f0584f`):
 
@@ -63,38 +59,35 @@ sudo systemctl enable jenkins
 
 ![AltText](Images/i4.png)
 
-8. You can get the password using:
+8. In the terminaal, you can get the password using:
 
 ```shell
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-
-8. Choose to 'Select plugins to install':
+9.. Choose to 'Select plugins to install':
 
 ![AltText](Images/i5.png)
 
-9. The plugins will install one by one:
+10. The plugins will install one by one:
 
 ![AltText](Images/i6.png)
 
-10. Next, you will then need to enter the initial admin password that can be found in `/var/lib/jenkins/secrets/initialAdminPassword` on your instance. If you just want to run it as `admin` without a password, you can skip this step. 
+11. Next, you will then need to enter the initial admin password that can be found in `/var/lib/jenkins/secrets/initialAdminPassword` on your instance. If you just want to run it as `admin` without a password, you can skip this step. 
 
-![AltText](Images/i0.png)
-
-11. The Instance Configuration URL:
+12. The Instance Configuration URL:
 
 ![AltText](Images/i7.png)
 
-12. You will receive confirmation Jenkins was set up and is ready to use:
+13. You will receive confirmation Jenkins was set up and is ready to use:
 
 ![AltText](Images/i8.png)
 
-13. The hole page of Jenkins:
+14. The home page of Jenkins:
 
 ![AltText](Images/i9.png)
 
-14. will also need to add github.com as a Known Host to allow SSH keys on GitHub:
+15. You will also need to add github.com as a Known Host to allow SSH keys on GitHub:
 
 
 ```shell
@@ -106,14 +99,13 @@ sudo su - jenkins
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 ```
 
-15. nodejs
-
+16. You will need to install the NodeJS Tool and select the correct version:
 
 ![AltText](Images/i11.png)
 
-14. Once you build your first job, it will appear in the Dashboard:
+17. Once you build your 4 jobs, they will appear in the Dashboard:
 
-![AltText](Images/i10.png)
+![AltText](Images/t1.png)
 
 
 
