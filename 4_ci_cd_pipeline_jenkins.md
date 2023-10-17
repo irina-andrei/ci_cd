@@ -1,13 +1,13 @@
 # Creating a CI/CD Pipeline with Jenkins
 
-![AltText](Images/diagram_pipeline.png)
+![AltText](Images/diagram.png)
 
 We will build our own Jenkins Server with the required environments, and rebuild the Jenkins pipeline up to the deployment of the app (our 4 jobs).
 
 
 ## Steps for setting up your own Jenkins Server:
 
-![AltText](Images/diagram.png)
+![AltText](Images/diagram_pipeline.png)
 
 1. Launch your instance and choose an appropriate name (recommended AMI: `ami-0136ddddd07f0584f`):
 
@@ -59,7 +59,7 @@ sudo systemctl enable jenkins
 
 ![AltText](Images/i4.png)
 
-8. In the terminaal, you can get the password using:
+8. In the terminal, you can get the password using:
 
 ```shell
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword

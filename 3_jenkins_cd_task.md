@@ -69,7 +69,7 @@ The SDLC is not a one-time process, but rather a continuous cycle that repeats i
 ### * App Instance
 
 * Server / VM / EC2: **Linux - ubuntu 18.04 LTS**
-* **Node.js 6** or above
+* **Node.js 12** 
 * app folder inside the environment
 * DB_host=db-ip:27017
 
